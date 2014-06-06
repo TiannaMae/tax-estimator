@@ -1,0 +1,63 @@
+<div id="itemize">
+	<div class="progress progress-striped active">
+  		<div class="progress-bar"  role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    		50%
+  		</div>
+  	</div>
+	<div ng-model='info.medical'>
+		<h3>Enter Schedule A Expenses Below {{calculations.AGI()}}</h3>
+		<h4>Medical</h4>
+		<div class="form-group">
+			<label>Doctors and Dentists Expenses</label>
+			<input class="form-control" type="number" ng-model='info.medical.doctor'>
+		</div>
+		<div class="form-group">
+			<label>Hospital Expenses</label>
+			<input class="form-control" type="number" ng-model='info.medical.hospital'>
+		</div>
+		<div class="form-group">
+			<label>Prescriptions</label>
+			<input class="form-control" type="number" ng-model='info.medical.prescription'>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label>Medical Miles</label>
+					<input class="form-control" class="form-control" type="number" id="MedAMiles" ng-model='info.medical.miles'>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group ">
+					<label>Medical Miles Expense</label>
+					<p class="form-control-static well well-sm" ng-bind="info.medical.milesExpense()"></p>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h4>Taxes</h4>
+	<div class="form-group">
+		<label>Real Estate Taxes</label>
+		<input class="form-control" type="number" ng-model='info.Aexpenses.taxes' >
+	</div>
+
+	<h4>Mortgage Interest</h4>
+	<div class="form-group">
+		<label>Mortgage Interest</label>
+		<input class="form-control" type="number" ng-model='info.Aexpenses.mortgage'>
+	</div>
+
+	<h4>Charitable Contributions</h4>
+	<div class="form-group">
+		<label>Total Charitable Contributions</label>
+		<input class="form-control" type="number" ng-model='info.Aexpenses.charitable'>
+	</div>
+	
+	<div class="btn-group btn-group-justified btn-group-lg">
+		<!--<button class="btn btn-default btn-lg" type="button" onclick="save(navId[2])">Back: Business Expenses</button>-->
+		<a href="#/section/BusinessExpense" class="btn btn-default btn-lg btn-block">Back: Business Expenses</a>
+		<!--<button class="btn btn-primary btn-lg" type="button" onclick="save(navId[4])">Next: General Info</button>-->
+		<a href="#/section/general" class="btn btn-primary btn-lg btn-block">Next: General Info</a>
+	</div>
+
+</div>

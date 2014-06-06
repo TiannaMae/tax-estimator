@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="app" ng-controller="mainCtrl">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Tax Estimator </title>
+
+	</div>	
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<a href="#/" class="navbar-brand">Tax Liability {{info.totalTax() | currency}}</a>
+		</div>
+	</nav>
+
+	<div class="container" ng-view></div>
+		
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controller.js"></script>
+</body>
+</html>

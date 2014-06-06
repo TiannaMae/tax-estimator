@@ -1,0 +1,84 @@
+ <div id="schedCExp" ng-model='info.expenses'>
+	<div class="progress progress-striped active">
+  		<div class="progress-bar"  role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+    		25%
+  		</div>
+  	</div>
+	<h3>Business Expenses</h3>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Mortgage/Rent</label>
+				<input class="form-control" type="number" ng-model="info.expenses.home">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Internet</label>
+				<input class="form-control" type="number" ng-model='info.expenses.internet'>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Utilities</label>
+				<input class="form-control" type="number" ng-model='info.expenses.utilities'>
+			</div>
+		</div>		
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Phone</label>
+				<input class="form-control" type="number" ng-model='info.expenses.phone'>
+			</div>
+		</div>
+	</div>					
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Supplies</label>
+				<input class="form-control" type="number" ng-model='info.expenses.supplies'>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Equipment</label>
+				<input class="form-control" type="number" ng-model='info.expenses.equipment'>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Health Insurance</label>
+				<input class="form-control" type="number" ng-model='info.expenses.health'>
+			</div>
+		</div>		
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Taxes</label>
+				<input class="form-control" type="number" ng-model='info.expenses.tax'>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Dues & Subscriptions</label>
+				<input class="form-control" type="number" ng-model='info.expenses.dues'>
+			</div>
+		</div>		
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label>Other Expenses</label>
+				<input class="form-control" type="number" ng-model='info.expenses.other'>
+			</div>
+		</div>
+	</div>				
+	<div class="btn-group btn-group-justified btn-group-lg">
+			<!--<button class="btn btn-default btn-lg" type="button" onclick="save(navId[1])">Back: Business Income</button>-->
+			<a href="#/section/income" class="btn btn-default btn-lg btn-block">Back: Business Income</a>
+			<!--<button class="btn btn-primary btn-lg" type="button" onclick="save(navId[3])">Next: Itemized Deductions</button>-->
+			<a href="#/section/itemize" class="btn btn-primary btn-lg btn-block">Next: Itemized Deductions</a>
+	</div>
+</div>
